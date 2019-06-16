@@ -21,6 +21,7 @@ html {
 
 body {
 	margin: 0;
+	min-height: 100vh;
 	background: radial-gradient(#1955b7, #001d4c);
 }
 
@@ -95,6 +96,18 @@ body {
 	width: 125px;
 }
 
+.card-background {
+	position: absolute;
+	transform: scale(1.05);
+	opacity: 0.5;
+	transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+}
+
+.card:hover .card-background {
+	transform: scale(1);
+	opacity: 1;
+}
+
 .card:hover {
 	cursor: url('Assets/Cursors/GhostHover.cur'), auto;
 }
@@ -140,17 +153,19 @@ body {
 }
 
 .card-back {
-	background-color: black;
+	background-color: gray;
 	border-color: #ff6d0f;
 }
 
 .card-front {
 	transform: rotateY(180deg);
-	background-color: #ffbb89;
+	background-color: gray;
 	border-collapse: #333;
 }
 
 .card-value {
+	height: 60%;
+	width: 60%;
 	transform: scale(0.9);
 	transition: transform 100ms ease-in-out;
 }
@@ -195,14 +210,16 @@ body {
 	right: 0;
 }
 
-.spider {
-	align-self: flex-start;
-	transform: translateY(-10px);
+.logo {
+	align-self: flex;
+	height: 50px;
+	width: 65px;
+	transform: scale(1);
 	transition: transform 100ms ease-in-out;
 }
 
-.card-back:hover .spider {
-	transform: translateY(0);
+.card-back:hover .logo {
+	transform: scale(1.2);
 }
 
 @media (max-width: 600px) {
