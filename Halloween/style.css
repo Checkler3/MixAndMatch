@@ -21,12 +21,12 @@ html {
 
 body {
 	margin: 0;
-	background: radial-gradient(#1955b7, #001d4c);
+	background: radial-gradient(#9d5900, #3d2200);
 }
 
 .page-title {
-	color: #bbbec0;
-	font-family: 'Oswald', sans-serif;
+	color: #ff6d0f;
+	font-family: Creepy, sans-serif;
 	font-weight: normal;
 	text-align: center;
 	font-size: 6em;
@@ -42,9 +42,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	z-index: 100;
-	color: #bbbec0;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
+	color: #ff6d0f;
+	font-family: Creepy, sans-serif;
 }
 
 .overlay-text-small {
@@ -84,8 +83,8 @@ body {
 }
 
 .game-info {
-	color: #bbbec0;
-	font-family: 'Oswald', sans-serif;
+	color: #ffbb89;
+	font-family: Lunacy, sans-serif;
 	font-size: 4em;
 }
 
