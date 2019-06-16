@@ -3,6 +3,7 @@ class AudioController {
 		this.bgMusic = new Audio('creepy.mp3');
 		this.flipSound = new Audio('flip.wav');
 		this.matchSound = new Audio('match.wav');
+		this.cadetsMatchSound = new Audio('angels_demons_clip.wav');
 		this.vicotorySound = new Audio('victory.wav');
 		this.gameOverSound = new Audio('gameOver.wav');
 		this.bgMusic.volume = 0.4;
@@ -20,6 +21,9 @@ class AudioController {
 	}
 	match() {
 		this.matchSound.play();
+	}
+	cadetsMatch() {
+		this.cadetsMatchSound.play();
 	}
 	victory() {
 		this.bgMusic.pause();
@@ -98,7 +102,18 @@ class MixAndMatch {
 			card1.classList.add('matched');
 			card2.classList.add('matched');
 		}, 250);
-		this.audioController.match();
+
+		console.log(
+			this.getCardType(card1).substr(this.getCardType(card1).length - 15)
+		);
+		if (
+			this.getCardType(card1).substr(this.getCardType(card1).length - 15) ===
+			'cadets_logo.png'
+		) {
+			this.audioController.cadetsMatch();
+		} else {
+			this.audioController.match();
+		}
 
 		if (this.matchedCards.length === this.cardsArray.length) {
 			this.victory();

@@ -154,13 +154,14 @@ body {
 
 .card-back {
 	background-color: gray;
-	border-color: #ff6d0f;
+	border-color: white;
 }
 
 .card-front {
 	transform: rotateY(180deg);
 	background-color: gray;
 	border-collapse: #333;
+	border-color: white;
 }
 
 .card-value {
