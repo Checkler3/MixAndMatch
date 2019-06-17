@@ -10,7 +10,7 @@ class AudioController {
 		this.bgMusic.loop = true;
 	}
 	startMusic() {
-		this.bgMusic.play();
+		//this.bgMusic.play();
 	}
 	stopMusic() {
 		this.bgMusic.pause();
@@ -103,9 +103,12 @@ class MixAndMatch {
 			card2.classList.add('matched');
 		}, 250);
 
-		console.log(
-			this.getCardType(card1).substr(this.getCardType(card1).length - 15)
-		);
+		// console.log for checking purposes
+		// console.log(
+		// 	this.getCardType(card1).substr(this.getCardType(card1).length - 15)
+		// );
+
+		// compares the last 15 chars of the .src string to see if it matches the Cadets value
 		if (
 			this.getCardType(card1).substr(this.getCardType(card1).length - 15) ===
 			'cadets_logo.png'
@@ -173,6 +176,7 @@ class MixAndMatch {
 	}
 }
 
+//Called after the page has fully loaded and initializes the overlay, the cards, and the game
 function ready() {
 	let overlays = Array.from(document.getElementsByClassName('overlay-text'));
 	let cards = Array.from(document.getElementsByClassName('card'));
