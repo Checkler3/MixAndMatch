@@ -159,7 +159,7 @@ body {
 
 .card-front {
 	transform: rotateY(180deg);
-	background-color: #1955b7, #001d4c;
+	background: radial-gradient(#ffd561, #ffcb3b);
 	border-collapse: #333;
 	border-color: white;
 }
