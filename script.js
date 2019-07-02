@@ -1,11 +1,11 @@
 class AudioController {
 	constructor() {
-		this.bgMusic = new Audio('creepy.mp3');
-		this.flipSound = new Audio('flip.wav');
-		this.matchSound = new Audio('match.wav');
-		this.cadetsMatchSound = new Audio('angels_demons_clip.wav');
-		this.vicotorySound = new Audio('victory.wav');
-		this.gameOverSound = new Audio('gameOver.wav');
+		this.bgMusic = new Audio('');
+		this.flipSound = new Audio('Assets/Audio/flip.wav');
+		this.matchSound = new Audio('Assets/Audio/match.wav');
+		this.cadetsMatchSound = new Audio('Assets/Audio/angels_demons_clip.wav');
+		this.vicotorySound = new Audio('Assets/Audio/victory.wav');
+		this.gameOverSound = new Audio('Assets/Audio/gameOver.wav');
 		this.bgMusic.volume = 0.4;
 		this.bgMusic.loop = true;
 	}
